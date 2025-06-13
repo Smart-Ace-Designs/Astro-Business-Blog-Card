@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-light-gray: #f2f5f9;
+  --color-theme-pure-white: #ffffff;
+  --color-theme-black: #111729;
+  --color-theme-dark-gray: #4a5567;
+
+  --font-poppins: "Poppins", "sans-serif";
+  --font-lato: "Lato", "sans-serif";
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Lato-Bold.ttf") format("truetype");
+  font-display: swap;
+}
