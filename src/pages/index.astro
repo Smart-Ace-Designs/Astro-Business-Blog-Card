@@ -1,10 +1,52 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+
+import heroImage from "@/assets/hero-image-1.jpg";
+import avatar from "@/assets/avatar-image-business-card.png";
 ---
 
 <MainLayout
   title="devChallenges | Business Blog Card"
   description="A devChallenges.io coding challenge."
 >
-  <!-- Begin your journey here... -->
+  <div class="bg-theme-pure-white mx-auto mt-10 w-[400px] overflow-hidden rounded-xl">
+    <Image
+      src={heroImage}
+      alt="Business Meeting"
+      loading="eager"
+      format="webp"
+      width={418}
+      height={280}
+      class="h-[280px] max-w-full rounded-t-xl object-cover"
+    />
+    <div class="flex flex-col gap-2">
+      <div class="px-7 py-4">
+        <h2 class="text-theme-black font-poppins mb-2 text-2xl font-medium tracking-tighter">
+          Perfect solution for small business
+        </h2>
+        <p class="text-theme-dark-gray font-lato">
+          Small businesses need to generate leads to grow. You can use tools like Ringy.
+        </p>
+      </div>
+      <hr class="text-theme-light-gray w-full" />
+      <div class="flex items-center gap-x-3 px-7 py-6">
+        <Image
+          src={avatar}
+          alt="Amy Burgess"
+          loading="eager"
+          format="webp"
+          width={35}
+          height={35}
+          class="rounded-full object-cover"
+        />
+        <div class="flex flex-col gap-y-1">
+          <div class="text-theme-black font-lato leading-none font-bold">Amy Burgess</div>
+          <div class="text-theme-dark-gray font-lato text-sm leading-none">
+            Customer Manager, Solution Oy
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </MainLayout>
