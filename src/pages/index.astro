@@ -10,11 +10,14 @@ import avatar from "@/assets/avatar-image-business-card.png";
   title="devChallenges | Business Blog Card"
   description="A devChallenges.io coding challenge."
 >
-  <div class="bg-theme-pure-white mx-auto mt-10 w-[400px] overflow-hidden rounded-xl">
+  <article
+    class="bg-theme-pure-white mx-auto mt-10 w-[400px] overflow-hidden rounded-xl"
+    role="article"
+  >
     <div class="relative">
       <Image
         src={heroImage}
-        alt="Business Meeting"
+        alt="A professional business meeting in progress"
         loading="eager"
         format="webp"
         width={418}
@@ -25,25 +28,31 @@ import avatar from "@/assets/avatar-image-business-card.png";
         src="/white-overlay.svg"
         alt=""
         class="absolute bottom-0 left-0 w-full translate-y-[1px]"
+        aria-hidden="true"
+        role="presentation"
       />
     </div>
 
     <div class="flex flex-col gap-2">
       <div class="px-8 pb-4">
-        <h2
+        <h1
           class="text-theme-black font-poppins mb-3 text-2xl leading-9 font-medium tracking-tighter"
         >
           Perfect solution for small business
-        </h2>
+        </h1>
         <p class="text-theme-dark-gray font-lato">
           Small businesses need to generate leads to grow. You can use tools like Ringy.
         </p>
       </div>
-      <hr class="text-theme-light-gray w-full" />
-      <div class="flex items-center gap-x-3 px-8 py-6">
+      <hr class="text-theme-light-gray w-full" aria-hidden="true" />
+      <div
+        class="flex items-center gap-x-3 px-8 py-6"
+        role="complementary"
+        aria-label="Author information"
+      >
         <Image
           src={avatar}
-          alt="Amy Burgess"
+          alt="Amy Burgess's profile picture"
           loading="eager"
           format="webp"
           width={35}
@@ -51,12 +60,18 @@ import avatar from "@/assets/avatar-image-business-card.png";
           class="ring-theme-light-gray rounded-full object-cover ring-3 ring-offset-1"
         />
         <div class="flex flex-col gap-y-1">
-          <div class="text-theme-black font-lato leading-none font-bold">Amy Burgess</div>
+          <div
+            class="text-theme-black font-lato leading-none font-bold"
+            role="heading"
+            aria-level="2"
+          >
+            Amy Burgess
+          </div>
           <div class="text-theme-dark-gray/90 font-lato text-sm leading-none font-bold">
             Customer Manager, Solution Oy
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </MainLayout>
