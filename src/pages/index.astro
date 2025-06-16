@@ -11,18 +11,28 @@ import avatar from "@/assets/avatar-image-business-card.png";
   description="A devChallenges.io coding challenge."
 >
   <div class="bg-theme-pure-white mx-auto mt-10 w-[400px] overflow-hidden rounded-xl">
-    <Image
-      src={heroImage}
-      alt="Business Meeting"
-      loading="eager"
-      format="webp"
-      width={418}
-      height={280}
-      class="h-[280px] max-w-full rounded-t-xl object-cover"
-    />
+    <div class="relative">
+      <Image
+        src={heroImage}
+        alt="Business Meeting"
+        loading="eager"
+        format="webp"
+        width={418}
+        height={280}
+        class="h-[280px] max-w-full rounded-t-xl object-cover"
+      />
+      <img
+        src="/white-overlay.svg"
+        alt=""
+        class="absolute bottom-0 left-0 w-full translate-y-[1px]"
+      />
+    </div>
+
     <div class="flex flex-col gap-2">
-      <div class="px-7 py-4">
-        <h2 class="text-theme-black font-poppins mb-2 text-2xl font-medium tracking-tighter">
+      <div class="px-8 pb-4">
+        <h2
+          class="text-theme-black font-poppins mb-3 text-2xl leading-9 font-medium tracking-tighter"
+        >
           Perfect solution for small business
         </h2>
         <p class="text-theme-dark-gray font-lato">
@@ -30,7 +40,7 @@ import avatar from "@/assets/avatar-image-business-card.png";
         </p>
       </div>
       <hr class="text-theme-light-gray w-full" />
-      <div class="flex items-center gap-x-3 px-7 py-6">
+      <div class="flex items-center gap-x-3 px-8 py-6">
         <Image
           src={avatar}
           alt="Amy Burgess"
@@ -38,7 +48,7 @@ import avatar from "@/assets/avatar-image-business-card.png";
           format="webp"
           width={35}
           height={35}
-          class="rounded-full object-cover"
+          class="ring-theme-light-gray rounded-full object-cover ring-3 ring-offset-1"
         />
         <div class="flex flex-col gap-y-1">
           <div class="text-theme-black font-lato leading-none font-bold">Amy Burgess</div>
