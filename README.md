@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://smartacedesigns-astro-bbcard.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/Smart-Ace-Designs/Astro-Business-Blog-Card">
       Solution
     </a>
     <span> | </span>
@@ -34,18 +34,18 @@
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
+- [Astro](https://astro.build/)
 - [Tailwind](https://tailwindcss.com/)
+- Astro [Space](https://github.com/Smart-Ace-Designs/Astro-Space) Template
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge. It utilizes:
+
+- Astro
+- Tailwind CSS
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+GitHub: [@smart-ace-designs](https://github.com/Smart-Ace-Designs)
