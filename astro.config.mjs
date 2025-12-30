@@ -17,7 +17,6 @@ export default defineConfig({
         cssVariable: "--font-lato",
         weights: [400, 700],
         styles: ["normal"],
-        subsets: ["latin"],
       },
       {
         provider: fontProviders.google(),
@@ -25,7 +24,6 @@ export default defineConfig({
         cssVariable: "--font-poppins",
         weights: [500],
         styles: ["normal"],
-        subsets: ["latin"],
       },
     ],
   },
