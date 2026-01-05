@@ -10,62 +10,63 @@ import avatar from "@/assets/avatar-image-business-card.png";
   title="devChallenges | Business Blog Card"
   description="A devChallenges.io coding challenge."
 >
-  <article
-    class="mx-auto mt-38 w-[400px] overflow-hidden rounded-xl bg-theme-pure-white sm:mt-51 sm:w-[418px]"
-    role="article"
-  >
-    <div class="relative">
-      <Image
-        src={heroImage}
-        alt="A professional business meeting in progress"
-        loading="eager"
-        format="webp"
-        width={418}
-        height={280}
-        class="h-[280px] max-w-full rounded-t-xl object-cover"
-      />
-      <img
-        src="/white-overlay.svg"
-        alt=""
-        class="absolute bottom-0 left-0 w-full translate-y-px"
-        aria-hidden="true"
-        role="presentation"
-      />
-    </div>
-
-    <div class="flex flex-col gap-2">
-      <div class="px-8 pb-4">
-        <h1
-          class="mb-3 font-poppins text-2xl leading-9 font-medium tracking-tighter text-theme-black"
-        >
-          Perfect solution for small business
-        </h1>
-        <p class="font-lato text-theme-dark-gray">
-          Small businesses need to generate leads to grow. You can use tools like Ringy.
-        </p>
-      </div>
-      <hr class="w-full text-theme-light-gray" aria-hidden="true" />
-      <div
-        class="flex items-center gap-x-3 px-8 py-6"
-        role="complementary"
-        aria-label="Author information"
-      >
+  <main>
+    <article
+      class="mx-auto mt-38 w-100 overflow-hidden rounded-xl bg-theme-pure-white sm:mt-51 sm:w-104.5"
+      role="article"
+    >
+      <div class="relative">
         <Image
-          src={avatar}
-          alt="Amy Burgess's profile picture"
+          src={heroImage}
+          alt="A professional business meeting in progress"
           loading="eager"
           format="webp"
-          width={35}
-          height={35}
-          class="rounded-full object-cover ring-3 ring-theme-light-gray ring-offset-1"
+          width={418}
+          height={280}
+          class="h-70 max-w-full rounded-t-xl object-cover"
         />
-        <div class="flex flex-col gap-y-1 sm:mb-1">
-          <h2 class="font-lato leading-none font-bold text-theme-black">Amy Burgess</h2>
-          <p class="font-lato text-sm leading-none font-bold text-theme-dark-gray/90">
-            Customer Manager, Solution Oy
+        <img
+          src="/white-overlay.svg"
+          alt=""
+          class="absolute bottom-0 left-0 w-full translate-y-px"
+          aria-hidden="true"
+          role="presentation"
+        />
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="px-8 pb-4">
+          <h1
+            class="mb-3 font-poppins text-2xl leading-9 font-medium tracking-tighter text-theme-black"
+          >
+            Perfect solution for small business
+          </h1>
+          <p class="font-lato text-theme-dark-gray">
+            Small businesses need to generate leads to grow. You can use tools like Ringy.
           </p>
         </div>
+        <hr class="w-full text-theme-light-gray" aria-hidden="true" />
+        <div
+          class="flex items-center gap-x-3 px-8 py-6"
+          role="complementary"
+          aria-label="Author information"
+        >
+          <Image
+            src={avatar}
+            alt="Amy Burgess's profile picture"
+            loading="eager"
+            format="webp"
+            width={35}
+            height={35}
+            class="rounded-full object-cover ring-3 ring-theme-light-gray ring-offset-1"
+          />
+          <div class="flex flex-col gap-y-1 sm:mb-1">
+            <h2 class="font-lato leading-none font-bold text-theme-black">Amy Burgess</h2>
+            <p class="font-lato text-sm leading-none font-bold text-theme-dark-gray/90">
+              Customer Manager, Solution Oy
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </main>
 </MainLayout>
