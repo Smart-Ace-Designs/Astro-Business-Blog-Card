@@ -8,22 +8,20 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Lato",
-        cssVariable: "--font-lato",
-        weights: [400, 700],
-        styles: ["normal"],
-      },
-      {
-        provider: fontProviders.google(),
-        name: "Poppins",
-        cssVariable: "--font-poppins",
-        weights: [500],
-        styles: ["normal"],
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Lato",
+      cssVariable: "--font-lato",
+      weights: [400, 700],
+      styles: ["normal"],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Poppins",
+      cssVariable: "--font-poppins",
+      weights: [500],
+      styles: ["normal"],
+    },
+  ],
 });
